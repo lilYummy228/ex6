@@ -16,10 +16,10 @@ namespace ex6
             int peopleCount = Convert.ToInt32(Console.ReadLine());
 
             int totalMinutes = receptionTimeInMinutes * peopleCount;
-            int timeInHours = totalMinutes / minutesInHour;
-            int timeInMinutes = totalMinutes % minutesInHour;
+            int waitingHours = totalMinutes / minutesInHour;
+            int waitingMinutes = totalMinutes % minutesInHour;
 
-            Console.WriteLine($"Вы должны простоять в очереди {timeInHours} часа {timeInMinutes} минут");
+            Console.WriteLine($"Вы должны простоять в очереди {waitingHours} часа {waitingMinutes} минут");
 
         }
     }
